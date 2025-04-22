@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62,5%;
+}
+.fondoNav{
+    background-color: #C20500;
+    color: white;
+}
+.tituloNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 0 43px;
+}
+.redesEncabezado{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 43px;
+}
+.redesEncabezado a{
+    color: #C20500;
+    text-decoration: underline;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav ul li{
+    margin-left: 20px;
+}
+.colorenlace{
+    color: white;
+    text-decoration: none;
+    font-family: "Andada Pro", serif;
+}
+a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+.sectionRecetas{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "imguno imgdos imgtres"
+    "imguno imgcuatro imgcinco";
+}
+.sectionRecetas img{
+    width: 100%;
+}
+.imagenRecetasUno{
+    grid-area: imguno;
+}
+.imagenRecetasDos{
+    grid-area: imgdos;
+}
+.imagenRecetasTres{
+    grid-area: imgtres;
+}
+.imagenRecetasCuatro{
+    grid-area: imgcuatro;
+}
+.imagenRecetasCinco{
+    grid-area: imgcinco;
+}
+
+
+.padreFlexRow{
+    display: flex;
+    flex-direction: row;
+}
+.recetasInicio{
+    border: 3px solid #C20500;
+}
+.divRecetasDulces article{
+    border: #C20500 1px solid;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 40px;
+}
+article img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.botonReceta{
+    background-color: #C20500;
+    padding: 10px;
+    border-radius: 10px;
+}
+h5{
+    font-size:1.5rem;
+}
+
+@media (max-width:768px){
+    nav ul{
+        flex-direction: column;
+    }
+    .tituloNav{
+        flex-direction: column;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .sectionRecetas{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+        "imguno"
+        "imgdos"
+        "imgtres"
+        "imgcuatro"
+        "imgcinco";
+    }
+}
+.fondoBootstrap{
+    background-color: #C20500;
+    height: 100vh;
+}
+.fondoBootstrap div{
+    border: solid 1px white;
+    height: 50vh;
+}
+.colorBoton{
+    background-color: #C20500;
+    color: white;
+}
+.cardsWidth{
+    width: 18rem;
+}
+.botonBuscar{
+    background-color: white;
+    color: #C20500;
+    border: solid white 1px;
+}
+.menuIcono{
+    background-image: url(../assets/img/menu.png) ;
+}
